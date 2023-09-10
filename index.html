@@ -1056,15 +1056,13 @@
         // Affiche le message de confirmation
         document.getElementById('confirmation-message').style.display = 'block';
 
-        // Masque le formulaire
-        document.getElementById('inscit').style.display = 'none';
-
-        // Optionnel : Réinitialise le formulaire après un certain délai
+        // Recharge la page après 3 secondes
         setTimeout(function () {
-            document.getElementById('inscit').reset();
-        }, 3000); // Réinitialise le formulaire après 3 secondes (3000 millisecondes)
+            location.reload();
+        }, 3000); // 3 secondes (3000 millisecondes)
     });
 </script>
+
 
 
                             
