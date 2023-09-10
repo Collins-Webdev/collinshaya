@@ -107,13 +107,6 @@
                             </g>
                         </svg>
                     </div>
-
-<div id="confirmation-message" class="hidden">Votre message a bien été envoyé.</div>
-                    <style>
-                        .hidden {
-                            display: none;
-                        }
-                    </style>
                     
                     <div class="home-data">
                         <h1 class="home-data-title">Hello, Je suis Collins HAYA<h1>
@@ -1046,25 +1039,6 @@
 
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
-
-
-
-<script>
-    document.getElementById('inscit').addEventListener('submit', function (e) {
-        e.preventDefault(); // Empêche l'envoi du formulaire par défaut
-
-        // Affiche le message de confirmation
-        document.getElementById('confirmation-message').style.display = 'block';
-
-        // Recharge la page après 3 secondes
-        setTimeout(function () {
-            location.reload();
-        }, 3000); // 3 secondes (3000 millisecondes)
-    });
-</script>
-
-
-
                             
 </body>
 
