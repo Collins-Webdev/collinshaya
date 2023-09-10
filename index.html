@@ -107,6 +107,14 @@
                             </g>
                         </svg>
                     </div>
+
+<div id="confirmation-message" class="hidden">Votre message a bien été envoyé.</div>
+                    <style>
+                        .hidden {
+                            display: none;
+                        }
+                    </style>
+                    
                     <div class="home-data">
                         <h1 class="home-data-title">Hello, Je suis Collins HAYA<h1>
                         <h3 class="home-data-subtitle">Développeur Web Front-End</h3>
@@ -913,7 +921,7 @@
         <!-- CONTACT ME -->
         <section class="contact section" id="contact">
             <h2 class="section-title">Me contacter</h2>
-            <span class="section-subtitle">Avez-vous un projet en tête ? Parlons-en pour le concrétiser ensemble.</span>
+            <span class="section-subtitle">Mon profil vous intéresse ? Contactez-moi pour explorer de nouvelles opportunités ensemble !</span>
 
             <div class="contact-container container grid">
                 <div class="contact-items">
@@ -1038,6 +1046,28 @@
 
     <!-- MAIN JS -->
     <script src="js/main.js"></script>
+
+
+
+<script>
+    document.getElementById('inscit').addEventListener('submit', function (e) {
+        e.preventDefault(); // Empêche l'envoi du formulaire par défaut
+
+        // Affiche le message de confirmation
+        document.getElementById('confirmation-message').style.display = 'block';
+
+        // Masque le formulaire
+        document.getElementById('inscit').style.display = 'none';
+
+        // Optionnel : Réinitialise le formulaire après un certain délai
+        setTimeout(function () {
+            document.getElementById('inscit').reset();
+        }, 3000); // Réinitialise le formulaire après 3 secondes (3000 millisecondes)
+    });
+</script>
+
+
+                            
 </body>
 
 </html>
